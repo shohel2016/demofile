@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada:ital@1&display=swap');
+}
+
+.conteinar-full{
+    margin: 0 auto;
+    width: 1100px;
+}
+body{
+    background-color: #231e24;
+}
+
+nav{
+    background-color: #1B1B1B;
+    height: 50pxpx;
+}
+
+nav:after{
+   content: '';
+   clear:both;
+   display: table;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    position: relative;
+    margin-right: 185px;
+}
+nav ul li{
+    float: left;
+    margin: 0 5px;
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    line-height: 70px;
+    text-decoration: none;
+    padding:  8px 15px;
+    font-family: 'Tiro Kannada', serif;
+}
+nav ul li a:hover{
+    box-shadow: 0 0 5px #33ffff,0 0 5px #33ffff;
+    color: cyan;
+    border-radius: 5px;
+}
+.logo{
+   max-width: 50px;
+   height: 50px;
+   padding: 10px;
+   border-radius: 100px;
+   margin-top: 7px;
+}
+.sing-btn{
+    background-color: #FF0083;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+.sing-btn:hover{
+    box-shadow: 0 0 5px #33ffff,0 0 5px #33ffff;
+    background-color: #ffffff;
+    color: #FF0083;
+}
+
+.left-side{
+    float: left;
+    margin-left: 167px;
+  
+}
+
+/*slider steard*/
+.slide input{
+    max-width: 200px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+.slide input:hover{
+    color: #FF0083;
+    max-width: 200px;
+    transition: ease 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+/*slider end*/
+.notice{
+    background-color: #454545;
+    height: 30px;
+    
+}
+.notice p{
+    color:#ffffff ;
+     font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.card{
+    max-width:480px;
+    height: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #131417;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top:20px;
+}
+
+.card .body{
+  text-align: center; 
+  align-items: center;   
+}
+
+
+.side-container{
+    width: 480px;
+    height: 600px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #131417;
+    border-radius: 5px;
+    margin-top:-200px;
+    float:right;
+    margin-right: 60px;
+    box-sizing: border-box;
+  
+}
+.side-container .side-container-card{
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 4px rgb(255 255 255 / 10%);
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+}
+.ref a{
+    text-decoration: none;
+}
+.side-container .side-container-card:hover{
+   box-shadow: 0 0 5px #FF0083;
+}
+
+.side-container h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.side-container .side-container-card img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    min-height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    object-position: left;
+    margin-top: 10px;
+    padding: 10px;
+}
+.head{
+    font-size: 14pt;
+    padding-top: 5px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -100px;
+}
+.ref{
+    margin-left: 330px;
+    margin-top: -30px;
+}
+
+/* count-start*/
+
+ .count-down {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.count-down .box {
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #333;
+    text-align: center;
+    flex: 1 1 10px;
+}
+
+.count-down .box h3 {
+    font-size: 30px;
+    color: #FF0083;
+    background: none;
+}
+ .count-down .box span {
+    font-size: 15px;
+   color: #FF0083;
+    background: none;
+}
+.card .body h4{
+    color: #FF0083;
+    text-transform: lowercase;
+}
+/* count-End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .slider-head {
+        display: none;
+    }
+  }
+
+
+  @media screen and (max-width:390px) {
+    .right-side{
+       width:350px ;
+      margin-right: 40px;
+      padding: none;
+       
+    }
+    .logo{
+        margin: 0 auto;
+        width: 380px;
+    }
+    .sing-btn{
+        margin-top: 10px;
+        width: 40px;
+    }
+    .right-side li a{
+    font-size: 15px;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .side-container{
+        width: 350px;
+        margin-right:700px;
+        margin-top: 50px;
+    }
+    .ref{
+        margin-right: 10px;
+        width: auto;
+    }
+  }
